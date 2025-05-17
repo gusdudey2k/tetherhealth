@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Supabase-Voiceflow Chatbot",
+  "version": "1.0",
+  "description": "Chrome extension with Supabase Auth and Voiceflow chatbot",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/icon16.png",
+      "48": "images/icon48.png",
+      "128": "images/icon128.png"
+    }
+  },
+  "permissions": [
+    "storage",
+    "identity"
+  ],
+  "host_permissions": [
+    "https://*.supabase.co/*",
+    "https://*.voiceflow.com/*"
+  ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  }
+} 
